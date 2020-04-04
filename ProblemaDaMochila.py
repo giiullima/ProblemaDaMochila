@@ -18,18 +18,25 @@ def criaPopulacao():
 def avaliacao():
     populacao = criaPopulacao()
     kgProduto=[7, 8, 4, 10, 4, 6, 4]
-    avaliacao=[]
-    valor = 0
-    #print(populacao)
+    benefProduto = [5, 8, 3, 2, 7, 9, 4]
+    peso = []
+    fitness =[]
+    valorP = 0
+    valorF = 0
+    print(populacao)
     
     for i in populacao:
         for x in range(7):
             if i[x] == '1':
-               valor +=kgProduto[x]
-        avaliacao.append(valor)
-        valor = 0
+               valorP +=kgProduto[x]
+               valorF +=benefProduto[x]
+               
+        fitness.append(valorF)
+        peso.append(valorP)
+        valorP = 0
+        valorF = 0
 
-    return avaliacao
+    return fitness
 
-#print(avaliacao())
+print(avaliacao())
 
