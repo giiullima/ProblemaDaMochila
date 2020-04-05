@@ -19,11 +19,10 @@ def avaliacao():
     populacao = criaPopulacao()
     kgProduto=[7, 8, 4, 10, 4, 6, 4]
     benefProduto = [5, 8, 3, 2, 7, 9, 4]
-    peso = []
-    fitness =[]
+    avaliacao =[]
     valorP = 0
     valorF = 0
-    print(populacao)
+    #print(populacao)
     
     for i in populacao:
         for x in range(7):
@@ -31,12 +30,13 @@ def avaliacao():
                valorP +=kgProduto[x]
                valorF +=benefProduto[x]
                
-        fitness.append(valorF)
-        peso.append(valorP)
+        lista =[i, valorF, valorP]
+        avaliacao.append(lista)
+        
         valorP = 0
         valorF = 0
 
-    return fitness
+    return avaliacao
 
 print(avaliacao())
 
