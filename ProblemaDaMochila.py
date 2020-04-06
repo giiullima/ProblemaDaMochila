@@ -24,7 +24,7 @@ def criaAvaliacao(valor):
     valorF = 0
     item = 0
     
-    #print(populacao)
+    print(populacao)
     
     for i in populacao:
         for x in range(7):
