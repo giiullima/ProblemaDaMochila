@@ -1,4 +1,7 @@
 # Problema da Mochila
+
+#### Passo a Passo a ser feito neste problema
+
 - [X] Como modelar o problema para trabalhar com cromossomos de Algoritmos Genéticos. Ou seja, tamanho do cromossomo, o que o cromossomo representará e o que cada gene dele representa.
 - [X] Definir o tamanho da população inicial. (7)
 - [X] Implementar um gerador de populaçao inicial.
