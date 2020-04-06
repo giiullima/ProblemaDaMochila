@@ -24,7 +24,7 @@ def criaAvaliacao(valor):
     valorF = 0
     item = 0
     
-    print(populacao)
+    #print(populacao)
     
     for i in populacao:
         for x in range(7):
@@ -44,7 +44,6 @@ def criaAvaliacao(valor):
 
 def CriaSelecao():
     avaliacao = criaAvaliacao(criaPopulacao())
-    avaliacao.sort(reverse=True, key=lambda x: x[1])
     selecao=[]
     
     for x in range(2):
